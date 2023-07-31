@@ -8,6 +8,12 @@ public class ThisExample {
 		o.a=10;
 		o.b=20;
 		o.add(100,200);
+		
+	}
+	void add(){
+		int a=1000,b=2000;
+		int res = a+b;
+		System.out.println(res);
 	}
 
 }
@@ -19,6 +25,7 @@ class A{
 		int res=a+b;
 		System.out.println(res);
 		int res1=this.a+this.b;
+		
 		System.out.println(res1);
 	}
 }

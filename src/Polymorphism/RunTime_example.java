@@ -5,11 +5,15 @@ public class RunTime_example {
 
 	public static void main(String[] args) {
 		
-		A o = new A();
+		B o = new B();
 		o.a=10;
 		o.b=20;
+		
 		o.add(100,200);
+		
+		
 	}
+	
 
 }
 
@@ -28,8 +32,9 @@ class B extends A{
 	
 		int res=a+b;
 		System.out.println(res);
-
+			
 	}
+	
 }
 
 

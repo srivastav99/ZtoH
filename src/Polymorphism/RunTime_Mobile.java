@@ -1,7 +1,7 @@
 package Polymorphism;
 
 
-public class RubTime_Mobile {
+public class RunTime_Mobile {
 
 	public static void main(String[] args) {
 		
@@ -23,7 +23,7 @@ public class RubTime_Mobile {
 		System.out.println();
 		System.out.println();
 		
-		Samsung_Galaxy_M33 o2= new Samsung_Galaxy_M33();
+		Samsung_Galaxy_M33 o2 = new Samsung_Galaxy_M33();
 		System.out.println("Samsung_Galaxy_M33:");
 		System.out.print("Display:");
 		o2.display();
@@ -38,6 +38,8 @@ public class RubTime_Mobile {
 		System.out.println("SIM details:");
 		o2.sim();
 		
+		o1=(Samsung_Galaxy_M14)o2;
+		o1.ram();
 	}
 
 }
@@ -73,7 +75,7 @@ class Samsung_Galaxy_M14{
 
 class Samsung_Galaxy_M33 extends Samsung_Galaxy_M14{
 	
-	void ram() {
+	 void ram() {
 		String ram = "6 GB";
 		System.out.println(ram);
 	}

@@ -203,7 +203,8 @@ public class Calculator {
 		cal.modelus(10, 2, 2, 2);
 		System.out.println();
 		 
-
+		
+		
 	}
 
 }

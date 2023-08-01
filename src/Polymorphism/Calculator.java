@@ -15,10 +15,12 @@ public class Calculator {
 	
 	}
 	
+	
 	void add(int a,int b,int c) {
 		int add=a+b+c;
 		System.out.println(add);
 	}
+	
 	void add(double a,double b,double c) {
 		double add=a+b+c;
 		System.out.println(add);
@@ -30,6 +32,10 @@ public class Calculator {
 	}
 	void add(double a,double b,double c,double d) {
 		double add=a+b+c+d;
+		System.out.println(add);
+	}
+	void add(int a, double b) {
+		double add = a+b;
 		System.out.println(add);
 	}
 	
@@ -158,6 +164,7 @@ public class Calculator {
 	}
 	
 	
+	
 	public static void main(String[] args) {
 		
 		 
@@ -169,6 +176,8 @@ public class Calculator {
 		cal.add(2, 3.5);
 		cal.add(2, 3.5, 4);
 		cal.add(2, 3, 4.5, 5);
+		cal.add(3, 3.5);
+		
 		System.out.println();
 		
 		cal.subtract(10, 2);

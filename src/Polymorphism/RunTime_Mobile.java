@@ -1,6 +1,5 @@
 package Polymorphism;
 
-
 public class RunTime_Mobile {
 
 	public static void main(String[] args) {
@@ -38,10 +37,16 @@ public class RunTime_Mobile {
 		System.out.println("SIM details:");
 		o2.sim();
 		
+		
+		
 		o1=(Samsung_Galaxy_M14)o2;
 		o1.ram();
+		
+		o1=o2;
+		o1.ram();
+		  
 	}
-
+ 
 }
 class Samsung_Galaxy_M14{
 	

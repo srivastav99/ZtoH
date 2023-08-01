@@ -10,11 +10,6 @@ public class ThisExample {
 		o.add(100,200);
 		
 	}
-	void add(){
-		int a=1000,b=2000;
-		int res = a+b;
-		System.out.println(res);
-	}
 
 }
 
@@ -22,11 +17,11 @@ class A{
 	int a,b;
 	void add(int a,int b) {
 		
-		int res=a+b;
-		System.out.println(res);
-		int res1=this.a+this.b;
+		int res=a+b; //accessing local variable
+		System.out.println("Result when not using 'this':"+res); 
+		int res1=this.a+this.b; //accessing global or class variables
 		
-		System.out.println(res1);
+		System.out.println("Result when using 'this':"+res1);
 	}
 }
 

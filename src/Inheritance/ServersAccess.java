@@ -22,7 +22,7 @@ import Inheritance.Trainee.DLogin;
 class Trainee{
 	void Dserver(){
 		System.out.println("You can use dummy servers.");
-		Trainee t = new Trainee();
+		
 		
 		
 	}

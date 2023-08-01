@@ -10,7 +10,7 @@ public class FinalExample {
 		Child o = new Child();
 		o.m1();
 		o.m2();
-		
+		 
 	}	
 }
 
@@ -50,3 +50,6 @@ class Child12 extends Non_Herit_P{ // gives error as the parent class in given f
 	}
 }
 */
+
+
+

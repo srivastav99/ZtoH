@@ -29,6 +29,7 @@ public class ProtectedClass {
 	}
 
 }
+
 class Pro1 {
 	protected void printSub() {
 		System.out.println("Method of sub-class, same file.");

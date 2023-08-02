@@ -1,6 +1,6 @@
 package OOPS;
 
-public class FinalExample {
+public class FinalExample { //final is used to lock values of variables which are not supposed to be changed. 
 
 	public static void main(String[] args) {
 		
@@ -10,9 +10,9 @@ public class FinalExample {
 		Child o = new Child();
 		o.m1();
 		o.m2();
-		 
+		
 	}	
-}
+}  
 
 class Parent{
 	

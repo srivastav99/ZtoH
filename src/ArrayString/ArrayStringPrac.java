@@ -1,5 +1,6 @@
 package ArrayString;
 
+import java.util.Scanner;
 
 public class ArrayStringPrac {
 
@@ -76,7 +77,7 @@ public class ArrayStringPrac {
 		*/
 		
 		
-		
+		/*
 		String s="" ;
 		char c=' ';
 		
@@ -89,6 +90,89 @@ public class ArrayStringPrac {
 		String str = ""+" ";
 		System.out.println(str);
 		//System.out.println(helloString);
+		 */
+		
+		int a = 5;
+		int c = 5;
+		int d= 6;
+		
+		String s = "vastav";
+		String s1 = "vastav";
+		String str = new String("vastav");
+		String str1 = new String("vastav");
+		
+		boolean b = (s==str);
+		System.out.println(b);
+		b = s.equals(str);
+		System.out.println(b);
+		b = (s==s1);
+		System.out.println(b);
+		b = s.equals(s1);
+		System.out.println(b);
+		b = (str==str1);
+		System.out.println(b);
+		b = str.equals(str1);
+		System.out.println(b);
+		
+		String s2;
+		System.out.println("enter string:");
+		Scanner sc = new Scanner(System.in);
+		s2=sc.nextLine();
+		
+		String s3;
+		System.out.println("enter string:");
+		s3=sc.nextLine();
+		
+		String s4;
+		s4="vastav";
+		
+		String s5="";
+		System.out.println("enter string:");
+		s5=sc.nextLine();
+		
+		String s6="";
+		s6="vastav";
+		
+		b = (s2==s);
+		System.out.println(b);
+		b = s2.equals(str); 
+		System.out.println(b);
+		
+		System.out.println();
+		
+		System.out.print("s:");
+		System.out.println(System.identityHashCode(s));
+		System.out.print("s1:");
+		System.out.println(System.identityHashCode(s1));
+		System.out.print("s2:");
+		System.out.println(System.identityHashCode(s2));
+		System.out.print("s3:");
+		System.out.println(System.identityHashCode(s3));
+		System.out.print("s4:");
+		System.out.println(System.identityHashCode(s4));
+		System.out.print("s5:");
+		System.out.println(System.identityHashCode(s5));
+		System.out.print("s6:");
+		System.out.println(System.identityHashCode(s6));
+		System.out.print("str:");
+		System.out.println(System.identityHashCode(str));
+		System.out.print("str1:");
+		System.out.println(System.identityHashCode(str1));
+		
+		System.out.println();
+		
+		System.out.println(System.identityHashCode(a));
+		System.out.println(System.identityHashCode(c));
+		System.out.println(System.identityHashCode(d));
+		
+		b = (a==c);
+		System.out.println(b);
+		
+		b = (a==d);
+		System.out.println(b);
+		
+		//b =  a.equals(c); //Error - Cannot use equals on the primitive type
+		//b = a.equals(c); //Error - Cannot use equals on the primitive type
 	}
 
 }

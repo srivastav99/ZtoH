@@ -25,8 +25,8 @@ public class ReverseString {
 		for(int i=0;i<ch.length;i++) {
 			System.out.print(ch[i]);
 		}
-		
 		*/
+		
 		
 		String str1 = "",str2="";
 		
@@ -41,7 +41,7 @@ public class ReverseString {
 			str2=str2+ch[i];
 		}
 		System.out.println("Reverse of given string:"+str2);
-
+		
 	}
 
 }

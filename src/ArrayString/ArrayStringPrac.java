@@ -101,7 +101,7 @@ public class ArrayStringPrac {
 		String str = new String("vastav");
 		String str1 = new String("vastav");
 		
-		boolean b = (s==str);
+		boolean b = (s==str); 
 		System.out.println(b);
 		b = s.equals(str);
 		System.out.println(b);
@@ -115,19 +115,19 @@ public class ArrayStringPrac {
 		System.out.println(b);
 		
 		String s2;
-		System.out.println("enter string:");
+		System.out.println("enter string s2:");
 		Scanner sc = new Scanner(System.in);
 		s2=sc.nextLine();
 		
 		String s3;
-		System.out.println("enter string:");
+		System.out.println("enter string s3:");
 		s3=sc.nextLine();
 		
 		String s4;
 		s4="vastav";
 		
 		String s5="";
-		System.out.println("enter string:");
+		System.out.println("enter string s5:");
 		s5=sc.nextLine();
 		
 		String s6="";

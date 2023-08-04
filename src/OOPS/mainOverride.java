@@ -9,7 +9,7 @@ public class mainOverride {
 		int []a= {1,2,3,4};
 		o.main(a);
 		o.main(0);
-		//o.main(args);
+		//o.main(args); - gives run time error
 		
 		
 	}

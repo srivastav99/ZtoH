@@ -32,6 +32,7 @@ class P{
 	}
 }
 
+
 class Y extends P{
 	public void add1() {
 		int a=200,b=300;

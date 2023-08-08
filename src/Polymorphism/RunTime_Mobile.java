@@ -42,6 +42,7 @@ public class RunTime_Mobile {
 		o1=(Samsung_Galaxy_M14)o2;
 		o1.ram();
 		
+		
 		o1=o2;
 		o1.ram();
 		  
@@ -51,7 +52,7 @@ public class RunTime_Mobile {
 class Samsung_Galaxy_M14{
 	
 	void display() {
-		String resolution = " x 2400 pixels";
+		String resolution = "1080 x 2400 pixels";
 		System.out.println(resolution);
 	}
 	void ram() {

@@ -11,7 +11,9 @@ public class mainOverride {
 		String []s= {"sed","cded","dsd"};
 		o.main(a);
 		o.main(3);
-		//o.main(s); // - gives run time error
+		main(2);//static method can access static method without inheritance so direct we can call it.
+		//main(s);// - gives error at run time
+		//o.main(s); // - gives error at run time
 		
 	}
 	
@@ -29,7 +31,7 @@ public class mainOverride {
 
 }
 
-
+ 
 class sub extends mainOverride{
 	
 	public static void main(String[] args) {

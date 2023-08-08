@@ -28,7 +28,7 @@ public class Static_implementation {
 	void nonstatic_method2() {
 		System.out.println(b);//here non-static method is able to access non-static variable because it is defined globally.
 		//System.out.println(c);//gives error as non-static method cannot access non-static variable as they are local to method in which they are defined
-		nonstatic_method1();//here non-static method is able to call non-static method as methods belong to class.
+		nonstatic_method1();//here non-static method is able to call non-static method as both methods belong to same class.
 	}
 	
 	

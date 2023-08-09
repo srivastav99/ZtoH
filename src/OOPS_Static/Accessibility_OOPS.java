@@ -5,12 +5,13 @@ public class Accessibility_OOPS {
 	int b=20;
 	int res=1;
 	
-	
 	static void c() {
-		
+		int a=50;
 		int b=10;
 		int r1 = a+b;
 		System.out.println("r1:"+r1);
+		int r5 = Accessibility_OOPS.a+b;
+		System.out.println("r5:"+r5);
 		
 		a=50;
 		int r2 = a+b;
@@ -23,16 +24,19 @@ public class Accessibility_OOPS {
 		
 	}
 	
+	
 	void z() {
 		System.out.println(b);
 		b=10;//here b value which is stored in object is overridden
 		System.out.println("b:"+b);
+		res=a+b; //here res is stored in object
+		System.out.println("res:"+res);
 		int res=a+b; //here res is stored in stack
 		System.out.println("res:"+res);
 		int b=40; //this b is created in stack memory
 		System.out.println("b:"+b);
-		res=a+b; //here res is stored in object
-		System.out.println("res:"+res);
+	
+		
 	}
 	
 	public static void main(String[] args) {
@@ -41,7 +45,8 @@ public class Accessibility_OOPS {
 		o.c();
 		o.z();
 		Accessibility_OOPS.c();
-		//Accessibility_OOPS.z();//cannot access as z is a non-static method and thus cannot be called using class reference.
+		c();
+		//Accessibility_OOPS.z(); //cannot access as z is a non-static method and thus cannot be called using class reference.
 		System.out.println(o.b); //here the b value in object is printed which is 10
 		System.out.println(o.res);
 	}

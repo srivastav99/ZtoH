@@ -59,7 +59,7 @@ public class SplitWithChar {
 			//System.out.println(str2[i]);
 		}
 		
-		*/
+		*/ 
 		
 		
 		
@@ -67,7 +67,7 @@ public class SplitWithChar {
 				char d[] = s.toCharArray();
 				char ch='p';
 				
-				if(d[d.length-1] != ch)
+				if(d[d.length-1] != ch) 
 				{
 					s=s+ch;
 				}
@@ -94,16 +94,20 @@ public class SplitWithChar {
 				int k=0;
 				for(int i=0;i<c.length;i++)
 				{	
-					if(c[i] == ch)
+					
+					if(c[i] != ch)
 					{
+						str+=c[i];
+					}
+					else
+					{
+						
 						s1[k]=str;
 					    k++;
 					    str="";
 					}
-					else
-					{
-						str+=c[i];
-					}
+					
+					
 				}
 				for(int i=0;i<s1.length;i++)
 				{
@@ -148,6 +152,10 @@ public class SplitWithChar {
 		System.out.println("String after splitting:");
 		System.out.println(str1);
 		*/
+				
+				
+				
+				
 	}
 
 }

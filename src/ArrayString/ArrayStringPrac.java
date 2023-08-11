@@ -92,6 +92,7 @@ public class ArrayStringPrac {
 		//System.out.println(helloString);
 		 */
 		
+		/*
 		int a = 5;
 		int c = 5;
 		int d= 6;
@@ -173,6 +174,22 @@ public class ArrayStringPrac {
 		
 		//b =  a.equals(c); //Error - Cannot use equals on the primitive type
 		//b = a.equals(c); //Error - Cannot use equals on the primitive type
+		*/
+		
+		char c='a';
+	
+		char ch=(char)(c-32);
+		System.out.println(ch);
+		
+		char c1='b';
+		
+		int n=c1;
+		char ch1=(char)(n-32);
+		System.out.println(ch1);
+		
 	}
+	
+		
+	
 
 }

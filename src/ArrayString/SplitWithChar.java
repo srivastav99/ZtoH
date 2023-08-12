@@ -63,9 +63,9 @@ public class SplitWithChar {
 		
 		
 		
-				String s ="apple";
+				String s ="apple is a fruit";
 				char d[] = s.toCharArray();
-				char ch='p';
+				char ch=' ';
 				
 				if(d[d.length-1] != ch) 
 				{
@@ -115,7 +115,7 @@ public class SplitWithChar {
 				}
 				
 				
-				String str2[] =s.split("p");
+				String str2[] =s.split(" ");
 				for(int i=0;i<str2.length;i++) {
 					System.out.println(str2[i]);
 				}

@@ -68,7 +68,7 @@ public class FindDupWord {
 public class FindDupWord {
 
 	public static void main(String[] args) {
-		String s = "selenium tool is a software tool is a";
+		String s = "selenium tool is a software tool is a ";
 		String str = "";
 		char[] c = s.toCharArray();
 		
@@ -82,6 +82,7 @@ public class FindDupWord {
 			
 			}
 			
+			    
 			if(c[i]==' ') {
 				//System.out.println(str);
 				char []ch1=str.toCharArray();

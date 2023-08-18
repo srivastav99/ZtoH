@@ -1,11 +1,12 @@
 package OOPS;
 
 class  Area {
-	//constructor
+	//Default constructor
 	Area() {
 		
 		System.out.println("Parent class constructor.");
 	}
+	//Overloaded constructor
 	Area(int a){
 		System.out.println("Parent class constructor with arguments.");
 	}
@@ -21,7 +22,7 @@ class SubClass3 extends Area{
 		System.out.println("Normal method");
 	}
 	
-	//constructor
+	//constructor(default)
 	public SubClass3() {
 		// System.out.println("Child class constructor before super call");//super must be first line so this line has to be commented out.
 		super(23); // Calls constructor of immediate parent class with arguments(overloaded constructor of parent class).If we comment out this line then default constructor of parent is called by default.

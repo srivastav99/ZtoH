@@ -11,14 +11,14 @@ public class ConstructorEx {
 
 	}
 	
-	ConstructorEx(double d) {
+	ConstructorEx(double d) { //overloaded constructor or constructor with arguments
 		pi = d;
 	}
-
-	ConstructorEx() {
+	 
+	ConstructorEx() { //default constructor
 
 	}
-
+	
 	void Area(int x) {
 		int r = x;
 		double res = pi * r * r;

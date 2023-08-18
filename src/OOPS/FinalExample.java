@@ -7,7 +7,7 @@ public class FinalExample { //final is used to lock values of variables which ar
 		final int a=1;
 		//a=5; // gives error as it is given final keyword and thus the value cannot be changes
 		
-		Child o = new Child();
+		Child1 o = new Child1();
 		o.m1();
 		o.m2();
 		
@@ -24,7 +24,7 @@ class Parent{
 	}
 }
 
-class Child extends Parent{
+class Child1 extends Parent{
 	
 	void m1() {
 		System.out.println("Child method 1");

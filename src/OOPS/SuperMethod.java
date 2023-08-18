@@ -10,6 +10,15 @@ class  Area {
 	Area(int a){
 		System.out.println("Parent class constructor with arguments.");
 	}
+	void method() {
+		System.out.println("Normal method.");
+		
+		//Area();//Gives error as we cannot call a constructor of same class or another class(in this case same class) without using super().
+		method2();
+	}
+	void method2() {
+		System.out.println("This is a normal method 2.");
+	}
 		
 }
 class SubClass3 extends Area{
@@ -26,6 +35,9 @@ class SubClass3 extends Area{
 	public SubClass3() {
 		// System.out.println("Child class constructor before super call");//super must be first line so this line has to be commented out.
 		super(23); // Calls constructor of immediate parent class with arguments(overloaded constructor of parent class).If we comment out this line then default constructor of parent is called by default.
+		//Area(); // Gives error as we cannot directly call a  constructor(in this case default constructor) of another class or same class(in this case another class) without using super().
+		//Area(23);// Gives error as we cannot directly call a constructor(in this case overloaded constructor) of another class or same class(in this case another class) without using super().
+		method();
 		System.out.println("Child class constructor after super call");
 	}
 }

@@ -16,6 +16,7 @@ class SubClass extends SuperKeyword{
 	int a=25;
 	
 	void method1() {
+		int a=50;
 		System.out.println("Accessing a variable without super keyword:"+a);
 		System.out.println("Accessing a variable with super keyword:"+super.a);
 		System.out.println("Accessing a variable with this keyword:"+this.a);

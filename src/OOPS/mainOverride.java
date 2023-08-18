@@ -32,7 +32,7 @@ public class mainOverride {
 }
 
  
-class sub extends mainOverride{
+class sub1 extends mainOverride{
 	
 	public static void main(String[] args) {
 		

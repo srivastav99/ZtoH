@@ -18,7 +18,7 @@ public class ConstructorEx {
 	ConstructorEx() { //default constructor
 
 	}
-	
+	 
 	void Area(int x) {
 		int r = x;
 		double res = pi * r * r;
@@ -28,17 +28,15 @@ public class ConstructorEx {
 }
 
 class SubClass2 {
-	
-	
-	void method1(){
 		
+	 void method1(){
 		
 		ConstructorEx o = new ConstructorEx();
 		o.Area(10);
 		
 		ConstructorEx o1 = new ConstructorEx(3.1415);//Here in this case we are setting precision of pi value based on radius value by using constructor and in this way we can save set the value as per requirement using constructor code.
 		o1.Area(100);
-		
+		 
 		ConstructorEx o2 = new ConstructorEx(3.141592);
 		o2.Area(1000);
 		

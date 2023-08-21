@@ -16,6 +16,8 @@ class Sub{
 
 public class SuperKeyword_practice extends Sub {
 
+	int a=1;
+	int b=2;
 	public static void main(String[] args) {
 		
 		SuperKeyword_practice o = new SuperKeyword_practice();

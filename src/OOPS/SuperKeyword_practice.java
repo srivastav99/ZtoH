@@ -10,10 +10,10 @@ class Sub{
 	}
 	static void method3() {
 		int d=30;
-		System.out.println("static method");
+		 System.out.println("static method");
 	}
 }
-
+        
 public class SuperKeyword_practice extends Sub {
 
 	int a=1;
@@ -24,6 +24,7 @@ public class SuperKeyword_practice extends Sub {
 		o.method2();
 		
 	}
+	
 	void method2(){
 		int a=60;
 		int b=100;
@@ -34,7 +35,7 @@ public class SuperKeyword_practice extends Sub {
 		super.method1();//calling a immediate parent method.
 		super.method3();//calling a immediate parent static method.No error as non-static method accessing static is possible.
 		//super.c;//Gives error as c is local variable not class variable and local variables cannot be accessed through obj reference
-		
+		 
 	}
 
 }

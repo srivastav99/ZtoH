@@ -1,8 +1,10 @@
 package OOPS;
 
+import java.awt.print.Printable;
 
 class  Area1 {
 	//Default constructor	
+	
 	Area1() {
 		
 		System.out.println("Parent class constructor.");
@@ -22,10 +24,12 @@ public class SuperMethod_Practice extends Area1{
 		
 		SuperMethod_Practice o = new SuperMethod_Practice();
 		
+		
 	}
 	
 	SuperMethod_Practice(){
-		//super(10);
-	}	
-
+		super(10);
+	}
+	
+	
 }

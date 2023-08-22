@@ -1,6 +1,5 @@
 package OOPS_Static;
 
-import javax.swing.plaf.multi.MultiInternalFrameUI;
 
 public class Static_prac {
 	int a;
@@ -10,8 +9,9 @@ public class Static_prac {
 		Static_prac o = new Static_prac();
 		o.add();
 		*/
+		
 		int b=100;
-	//	static int d = 10;
+		//static int d = 10;
 		//a=50;
 		
 		

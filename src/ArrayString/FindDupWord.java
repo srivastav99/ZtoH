@@ -1,6 +1,5 @@
 package ArrayString;
 
-import java.util.Iterator;
 
 import javax.xml.transform.Source;
 
@@ -68,7 +67,7 @@ public class FindDupWord {
 public class FindDupWord {
 
 	public static void main(String[] args) {
-		String s = "selenium tool is a software tool is a ";
+		String s = "selenium tool is a software tool is a";
 		String str = "";
 		char[] c = s.toCharArray();
 		

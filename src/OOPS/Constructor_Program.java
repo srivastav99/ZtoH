@@ -9,21 +9,28 @@ public class Constructor_Program {
 		SubClass1 obj = new SubClass1();
 		obj.method1();
 		
-
 	}
-	
+	 
+	  
 	Constructor_Program(double d) {
 		pi=d;
 	}
 	
 	
-	Constructor_Program() {
+	 Constructor_Program() {
 		System.out.println("default constructor");
 		pi=3.14159;
 		
 	}
 	
-	
+	 /*
+	 static Constructor_Program() {
+		System.out.println("default constructor");
+		pi=3.14159;
+			
+	}
+	*/
+	 
 	 void Area() {
 		int r=10;
 		double res=pi*r*r;

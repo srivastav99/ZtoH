@@ -12,7 +12,7 @@ public class Constructor_practice {
 }
 class B{
 	double pi=3.14;
-	B() {
+	B(){
 		 pi=3.1415;
 	}
 	void Area() {

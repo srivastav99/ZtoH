@@ -15,7 +15,7 @@ public class ThisExample {
 
 class A{
 	int a,b;
-	void add(int a,int b) {
+	public void add(int a,int b) {
 		
 		int res=a+b; //accessing local variable
 		System.out.println("Result when not using 'this':"+res); 
@@ -23,6 +23,7 @@ class A{
 		
 		System.out.println("Result when using 'this':"+res1);
 	}
+	
 }
 
 

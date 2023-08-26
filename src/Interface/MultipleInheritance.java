@@ -55,7 +55,7 @@ public class MultipleInheritance  {
 		
 		o3.method1();
 		o3.method2();
-		o3.method3();
+		o3.method3();  
 
 	}
 

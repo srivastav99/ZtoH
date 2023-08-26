@@ -19,6 +19,8 @@ public class Static_prac {
 		
 		System.out.println(b);
 		System.out.println(Static_prac.b);
+		
+		
 
 	}
 	
@@ -40,6 +42,7 @@ public class Static_prac {
 		
 		System.out.print("s2:");
 		System.out.println(System.identityHashCode(s2));
+		
 		
 	}
 	

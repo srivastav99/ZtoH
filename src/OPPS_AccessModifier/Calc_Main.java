@@ -89,6 +89,7 @@ public class Calc_Main {
 		objM_nested_def.mul2nesteddef();//accessing public method of nested class of another class of another file of same package - no error
 		objM_nested_def.mul3nesteddef();//accessing default method of nested class of another class of another file of same package - no error
 		//objM_nested_def.mul4nesteddef();//accessing private method of nested class of another class of another file of same package - error
+		
 		/*
 		nested_pvt_Mul objM_nested_pvt= new nested_pvt_Mul();  //creating object for nested class of another class of another file of same package(private class) - error
 		

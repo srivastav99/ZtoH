@@ -1,21 +1,19 @@
 package ArrayString;
 
-import java.util.Iterator;
-
-import javax.print.attribute.standard.JobMessageFromOperator;
-
 public class In_built_Methods {
 
 	public static void main(String[] args) {
 		
 		String s = "java";
 		//charAt()
+		//The Java String class charAt() method returns a char value at the given index number.
 		System.out.println("charAt():");
 		char c = s.charAt(1);
 		System.out.println(c);
 		System.out.println();
 		
 		//compareTo()
+		//It compares strings on the basis of the Unicode value of each character in the strings.The Java String class compareTo() method compares the given string with the current string lexicographically. It returns a positive number, negative number, or 0.If the first string is lexicographically greater than the second string, it returns a positive number (difference of character value). If the first string is less than the second string lexicographically, it returns a negative number, and if the first string is lexicographically equal to the second string, it returns 0.
 		System.out.println("compareTo():"); //compares ASCII values of character one by one and if they are unequal it gives its difference in ASCII value, if entire charcaters of entire string matches it gives 0 
 		String s1="java";
 		
@@ -26,6 +24,7 @@ public class In_built_Methods {
 		System.out.println();
 		
 		//concat()
+		//The Java String class concat() method combines specified string at the end of this string. It returns a combined string. It is like appending another string.
 		System.out.println("concat():");
 		String s2 = s.concat(s1);
 		System.out.println(s2);
@@ -34,6 +33,7 @@ public class In_built_Methods {
 		System.out.println();
 		
 		//contains()
+		//The Java String class contains() method searches the sequence of characters in this string. It returns true if the sequence of char values is found in this string otherwise returns false.
 		System.out.println("contains():");
 		boolean bool = s.contains(s1);
 		System.out.println(bool);
@@ -42,6 +42,7 @@ public class In_built_Methods {
 		System.out.println();
 		
 		//endsWith()
+		//The Java String class endsWith() method checks if this string ends with a given suffix. It returns true if this string ends with the given suffix; else returns false.
 		System.out.println("endsWith():");
 		String str = "a";
 		bool = s.endsWith(str);
@@ -51,18 +52,21 @@ public class In_built_Methods {
 		System.out.println();
 		
 		//equals()
+		//The Java String class equals() method compares the two given strings based on the content of the string. If any character is not matched, it returns false. If all characters are matched, it returns true.
 		System.out.println("equals():");
 		System.out.println(s.equals(s1)); //s=java, s1=java
 		System.out.println(s.equals("va"));
 		System.out.println();
 		
 		//equalsIgnoreCase()
+		//The Java String class equalsIgnoreCase() method compares the two given strings on the basis of the content of the string irrespective of the case (lower and upper) of the string. It is just like the equals() method but doesn't check the case sensitivity. If any character is not matched, it returns false, else returns true.
 		System.out.println("equalsIgnoreCase():");
 		System.out.println(s.equalsIgnoreCase(s1));//s=java, s1=java
 		System.out.println(s.equalsIgnoreCase("Java"));
 		System.out.println();
 		
 		//format() 
+		//The java string format() method returns the formatted string by given locale, format and arguments.The format() method of java language is like sprintf() function in c language and printf() method of java language.
 		float f = 3.2346f;
 		System.out.println("format():");
 		System.out.println(String.format("%s is programming language", s));//string s=java
@@ -72,6 +76,7 @@ public class In_built_Methods {
 		System.out.println();
 		
 		//getBytes() //converts string into byte arrays having ASCII values of respective characters 
+		//The Java String class getBytes() method does the encoding of string into the sequence of bytes and keeps it in an array of bytes.
 		System.out.println("getBytes():");
 		String s4 = "abcd";
 		byte[] bytes=s4.getBytes(); 
@@ -81,6 +86,7 @@ public class In_built_Methods {
 		System.out.println();
 		
 		//getChars()
+		//The Java String class getChars() method copies the content of this string into a specified char array. There are four arguments passed in the getChars() method. 
 		System.out.println("getChars():");
 		String str1 = "java is a programming language";
 		char[] ch = new char[4];

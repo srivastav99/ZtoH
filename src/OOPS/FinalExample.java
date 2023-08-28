@@ -1,5 +1,6 @@
 package OOPS;
 
+//Note:final is the only modifier that can be used inside method.
 public class FinalExample { //final is used to lock values of variables which are not supposed to be changed. 
 
 	public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class FinalExample { //final is used to lock values of variables which ar
 		o.m1();
 		o.m2();
 		
-		
+		 
 		System.out.println(b);
 	}	
 }  

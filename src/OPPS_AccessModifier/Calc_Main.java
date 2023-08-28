@@ -11,6 +11,7 @@ public class Calc_Main {
 	//In this program add class is made to represent public class, subtract class to represent default class and mul class to represent public class with nested classes.
 	//In the classes 2num method represents public method, 3num method represents default method and 4num method represents private method.
 	
+	//Access modifiers cannot be given to local variables(variables inside of methods),the only modifier that can be used on local variables(variables in method) is final. 
 	public static void main(String[] args) {
 		
 		//Accessing same package memebers

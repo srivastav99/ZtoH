@@ -1,5 +1,7 @@
 package Interface;
 
+import OPPS_AccessModifier.Public_Add;
+
 //Interface declaration: by first user  
 interface Drawable{  
 void draw();  
@@ -14,11 +16,12 @@ class Rectangle implements Drawable{
 
 class Circle implements Drawable{  
 	public void draw() {
+		
 		System.out.println("drawing circle");
 	}
 	
 }
-
+ 
 //Using interface: by third user  
 class TestInterface {
 	public static void main(String args[]) {

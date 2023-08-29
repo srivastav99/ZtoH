@@ -164,7 +164,7 @@ public class FindDuplicate {
 			value = true;
 			for(int j=0;j<i;j++) {  //This loop is there to check for values which have already repeated(for already found duplicates). 
 				
-				if(a[j]==a[i]) {
+				if(a[j]==a[i]) {  //This loop checks for elements before i index in search for already found duplicates.
 					
 					value=false;
 				}
@@ -174,7 +174,7 @@ public class FindDuplicate {
 				count=1;
 				for(int j=i+1;j<a.length;j++) { // This loop is for checking for new duplicate values.
 					
-					if(a[i]==a[j]) {
+					if(a[i]==a[j]) {   ////This loop checks for elements after i index in search of new duplicates.
 						
 						count++;
 						flag=1;

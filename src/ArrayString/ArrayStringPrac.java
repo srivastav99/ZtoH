@@ -186,7 +186,11 @@ public class ArrayStringPrac {
 		int n=c1;
 		char ch1=(char)(n-32);
 		System.out.println(ch1);
-		
+		/*
+		Scanner scanner = new Scanner(System.in);
+		char c5 = scanner.next().charAt(0);
+		System.out.println(c5);
+		*/
 	}
 	
 		

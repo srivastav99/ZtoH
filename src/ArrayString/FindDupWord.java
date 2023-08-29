@@ -1,7 +1,6 @@
 package ArrayString;
 
 
-import javax.xml.transform.Source;
 
 /*
 public class FindDupWord {
@@ -64,6 +63,7 @@ public class FindDupWord {
 }
 */
 
+/*//using char array
 public class FindDupWord {
 
 	public static void main(String[] args) {
@@ -148,4 +148,71 @@ public class FindDupWord {
 		}
 	}
 }
+*/	
+
+//Using string array and .equals()
+
+public class FindDupWord {
+public static void main(String[] args) {
+	String s1="Hi Hello World Hi Hello Hi Hello Hi Hello Hel";
+	char ch[]=s1.toCharArray();
+	String s="";
+	int space=0;			
+	for(int i=0;i<ch.length;i++)
+	{
+		if(ch[i]==' ') {
+			space++;
+		}      
+	}
+//System.out.println(space);	
+	String sh[]=new String[space+1];
+	int k=0;
+	for(int i=0;i<ch.length;i++)
+	{
+		if(ch[i]!=' '||i==ch.length-1) {
+			s=s+ch[i];
+		}
+		
+		if(ch[i]==' '||i==ch.length-1) {
+			sh[k]=s;
+			k++;
+			s="";
+		}
+		
+	}
+	//printing string array
+	for(int i=0;i<sh.length;i++) {
+		System.out.print(sh[i]+" ");
+	}
 	
+	System.out.println();
+	String ss="";
+	System.out.println("Duplicate Words is : ");
+	for(int i=0;i<sh.length;i++) {
+		
+		for(int j=i+1;j<sh.length;j++) {
+			
+			
+			if(sh[i].equals(sh[j])) {
+				ss=ss+sh[i];
+				
+				
+				/*
+				System.out.println(sh[i]);
+				break;
+				*/
+			}
+			
+			
+		}
+		
+		if(sh[i].equals(ss)) {
+			System.out.println(sh[i]);
+		}
+		
+		ss="";
+	}
+	
+	
+}
+}

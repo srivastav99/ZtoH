@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SmallestLargest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int size,n,l,s;
 		Scanner sc = new Scanner(System.in);
 	

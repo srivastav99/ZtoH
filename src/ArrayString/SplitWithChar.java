@@ -63,7 +63,7 @@ public class SplitWithChar {
 		
 		
 		
-				String s ="apple is a fruit";
+				String s =" apple is a fruit";
 				char d[] = s.toCharArray();
 				char ch=' ';
 				
@@ -73,7 +73,7 @@ public class SplitWithChar {
 				}
 				
 				char c[] = s.toCharArray();
-				String str="";
+				
 				int count =0;
 				for(int i=0;i<c.length;i++)
 				{
@@ -90,6 +90,7 @@ public class SplitWithChar {
 					
 				}
 				*/
+				String str="";
 				String s1[] = new String[count];
 				int k=0;
 				for(int i=0;i<c.length;i++)
@@ -113,7 +114,7 @@ public class SplitWithChar {
 				{
 					System.out.println(s1[i]);
 				}
-				
+				 
 				
 				String str2[] =s.split(" ");
 				for(int i=0;i<str2.length;i++) {

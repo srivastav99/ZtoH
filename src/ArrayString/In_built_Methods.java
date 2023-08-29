@@ -32,12 +32,12 @@ public class In_built_Methods {
 		System.out.println(s3);
 		System.out.println();
 		
-	//contains()
+	//contains() 
 		//The Java String class contains() method searches the sequence of characters in this string. It returns true if the sequence of char values is found in this string otherwise returns false.
 		System.out.println("contains():");
-		boolean bool = s.contains(s1);
+		boolean bool = s.contains(s1); //s=java s1=java 
 		System.out.println(bool);
-		bool = s.contains("java");
+		bool = s.contains("ja");
 		System.out.println(bool);
 		System.out.println();
 		
@@ -54,6 +54,7 @@ public class In_built_Methods {
 	//equals()
 		//The Java String class equals() method compares the two given strings based on the content of the string. If any character is not matched, it returns false. If all characters are matched, it returns true.
 		System.out.println("equals():");
+		System.out.println(s==s1);//In this case it is taken as string literal, if we consider object it gives false(refer to intern()).
 		System.out.println(s.equals(s1)); //s=java, s1=java
 		System.out.println(s.equals("va"));
 		System.out.println();
@@ -98,7 +99,7 @@ public class In_built_Methods {
 		
 	//indexOf() 	
 		//The Java String class indexOf() method returns the position of the first occurrence of the specified character or string in a specified string.
-		System.out.println("getChars():");
+		System.out.println("indexOf():");
 		String str2 = "i am a human";
 		int n=str2.indexOf("m");
 		System.out.println(n);
@@ -233,7 +234,7 @@ public class In_built_Methods {
         System.out.println(s12lower); 
         System.out.println();
         
-    //toLowerCase()
+    //toUpperCase()
         //The java string toUpperCase() method returns the string in uppercase letter. In other words, it converts all characters of the string into upper case letter.
         System.out.println("toUpperCase():");
         String s13="java";  

@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class ArrayFindOccurance {
 	
 	public static void main(String[] args){
-	int n,count=0,flag=0;
+	int n,count=0;
+	//int flag=0;
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -40,7 +41,7 @@ public class ArrayFindOccurance {
 				if(a[i]==a[j]) {
 					
 					count++;
-					flag=1;
+					//flag=1;
 				}
 			}
 			
@@ -51,9 +52,11 @@ public class ArrayFindOccurance {
 			
 		}
 	}
+	/*
 	if(flag==0) {
 		System.out.println("No duplicate elements found.");
 	}
+	*/
 }
 
 }

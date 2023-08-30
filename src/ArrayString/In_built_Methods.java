@@ -182,13 +182,25 @@ public class In_built_Methods {
 		
 	//split()
 		//The java string split() method splits this string against given regular expression and returns a char array.
+		//splitting with " "
 		System.out.println("split():");
-		String s8 = "i am a human";
+		String s8 = "i am a  human";
 		String []strarr = s8.split(" ");
+		System.out.println("Splitting a string with spaces using \" \"");
 		for(int i=0;i<strarr.length;i++) {
-			System.out.println(strarr[i]);
+			System.out.println(strarr[i]);	
 		}
-		System.out.println();
+		System.out.println("Length of string array:"+strarr.length); //5 ,when we use " " to split a string with space, and whenever there are two continuous spaces it will take in one space
+		//splitting with \s+
+		s8 = "i am a  human";
+		strarr = s8.split("\\s+");//Here + makes sure that even if multiple spaces are there in string it will take care of it.if we use - instead if + then split will take the entire string and put it in single index of string array.
+		System.out.println("Splitting a string with spaces using \\s+");
+		for(int i=0;i<strarr.length;i++) {
+			System.out.println(strarr[i]); 	
+		}
+		System.out.println("Length of string array:"+strarr.length); //4,removes all white spaces and stores only words.
+		//splitting with a character
+		s8 = "i am a human";
 		strarr = s8.split("a");
 		for(int i=0;i<strarr.length;i++) {
 			System.out.println(strarr[i]);

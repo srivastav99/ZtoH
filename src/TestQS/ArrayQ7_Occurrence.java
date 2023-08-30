@@ -9,12 +9,11 @@ public class ArrayQ7_Occurrence {
 		char c[]=s1.toCharArray();
 		char c1[]=s2.toCharArray();
 		int flag=0,k=0;
-		int count=0;
+		int count=0;   
 		for(int i=0;i<c.length;i++) {
-			k=i;
+			k=i; 
 			flag=0;
 			for(int j=0;j<c1.length;j++) {
-				
 				
 				if(c[k]==c1[j]) {
 					flag++;

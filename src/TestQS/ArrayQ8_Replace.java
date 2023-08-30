@@ -21,6 +21,17 @@ public class ArrayQ8_Replace {
 				
 			}
 		}
+		/*
+		System.out.println("String after replacing:");
+		for(int i=0;i<str.length;i++) {
+			if(i==str.length-1) {
+				System.out.print(str[i]);
+				break;
+			}
+			System.out.print(str[i]+" ");
+		}
+		*/
+		
 		String s2="";
 		System.out.println("String after replacing:");
 		for(int i=0;i<str.length;i++) {
@@ -33,7 +44,9 @@ public class ArrayQ8_Replace {
 			
 		}
 		System.out.print(s2);
-
+	
+		
+		
 	}
 
 }

@@ -28,7 +28,7 @@ public class ArrayQ7_Occurrence {
 			}
 		}
 		if(count>=1) {
-			System.out.println(s2+" occurs "+count+" times in the given string:"+s1);
+			System.out.println("Substring "+s2+" occurs "+count+" times in the given string:"+s1);
 		}
 		else {
 			System.out.println("Substring not matching");

@@ -26,6 +26,7 @@ public class throws_Example {
 		}
 		
 		try {
+			
 			o.method2();
 		}
 		catch (IndexOutOfBoundsException e) {

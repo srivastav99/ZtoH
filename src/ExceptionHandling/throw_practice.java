@@ -9,6 +9,7 @@ public class throw_practice {
 		
 
 	}
+	
 	void method1() {
 		
 		cc1 o2 = new cc1();

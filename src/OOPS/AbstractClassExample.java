@@ -57,9 +57,10 @@ abstract class C2 extends C1{
 		System.out.println("Just a concrete method m5() in abstract class .");
 	}
 	void m6() {
-		System.out.println("implementation of abstract method m6 of C1 class");
+		System.out.println("implementation of abstract method m6 of C1 class inside abstract class.");
 	}
 	abstract void m3();
+	
 	
 }
 
@@ -77,3 +78,4 @@ class C3 extends C2{
 	}
 	
 } 
+

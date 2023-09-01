@@ -1,3 +1,4 @@
+
 package Basic;
 
 public class TrickyCode1 {
@@ -11,3 +12,5 @@ public class TrickyCode1 {
 	}
 
 }
+
+

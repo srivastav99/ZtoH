@@ -1,4 +1,7 @@
+
 package ExceptionHandling;
+
+
 
 public class Exe_Han_Practice {
 
@@ -10,7 +13,6 @@ public class Exe_Han_Practice {
 			int c=a/b;
 		}
 		catch(ArithmeticException e) {
-			
 			System.out.println("Arithmatic exception : cannot be divided by 0");
 			
 		}
@@ -18,3 +20,4 @@ public class Exe_Han_Practice {
 	}
 
 }
+

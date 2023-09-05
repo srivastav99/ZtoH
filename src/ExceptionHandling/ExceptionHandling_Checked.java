@@ -29,10 +29,13 @@ public class ExceptionHandling_Checked {
 		
 		try {
 			FileInputStream GFG = new FileInputStream("/Desktop/GFG.txt");
-		} catch (IndexOutOfBoundsException e) {
+		} 
+		catch (IndexOutOfBoundsException e) {
 			
-			System.out.println(e.getMessage());
+			System.out.println("m1 method catch block");
 		}
+		
+		System.out.println("m1 method end");
 	}
 
 }

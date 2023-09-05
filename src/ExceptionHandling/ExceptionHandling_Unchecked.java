@@ -2,7 +2,7 @@ package ExceptionHandling;
 
 
 
-public class ExceptionHandling_Unchecked { //In this code we can comment out throw and throws still the code works
+public class ExceptionHandling_Unchecked { //In this code we can comment out throws still the code works since unchecked exceptions are thrown automatically
 	
 		public static void main(String[] args) {
 			
@@ -26,8 +26,6 @@ public class ExceptionHandling_Unchecked { //In this code we can comment out thr
 
 }
 
-		
-
 class I {
 	void method1() throws Exception  {
 		
@@ -38,9 +36,9 @@ class I {
 		} 
 		catch(IndexOutOfBoundsException e) {
 			
-			throw new Exception(e.getMessage());
-
+			System.out.println("method 1 catch block");
 		}
+		System.out.println("method 1 end");
 		
 	}
 }

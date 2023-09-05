@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-=======
-/ArrayString/
->>>>>>> refs/remotes/origin/master
-/Arrays/
-/Basic/
-/Conditional_ifAndelse/
-/ExceptionHandling/
-/Functions/
-/Inheritance/
+/TestQS/
 /Interface/
 /Loops/
 /OOPS/
@@ -18,5 +9,6 @@
 /Operators/
 /Polymorphism/
 /Selection_Switch/
-/TestQS/
 /Two_D_Array/
+/ExceptionHandling/
+/Inheritance/

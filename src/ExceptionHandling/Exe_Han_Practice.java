@@ -4,6 +4,7 @@ package ExceptionHandling;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
+
 public class Exe_Han_Practice {
 
 	public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Exe_Han_Practice {
 		int a=10,b=0;
 		
 		System.out.println("main start");
-		//un-checked exception(arithmetic exception)
+		//un-checked exception(Arithmetic exception)
 		try {	
 			int c=a/b;
 		}
@@ -21,19 +22,20 @@ public class Exe_Han_Practice {
 		}
 		
 		System.out.println("random print statement");
-		//checked exception(file not found exception)
+		//checked exception(FileNotFound exception)
 		try {
 			FileInputStream GFG = new FileInputStream("/Desktop/GFG.txt");
-		} catch (FileNotFoundException e) {
+		}
+		catch (FileNotFoundException e) {
 			
 			System.out.println(e.getMessage());
 		}
 		
 		
-		Exe_Han_Practice o = new Exe_Han_Practice();
+		//Exe_Han_Practice o = new Exe_Han_Practice();
 		//exception handling in another method without throws
 		try {
-			o.m1();
+			Exe_Han_Practice.m1(); //accessing static method through class name
 		}
 		catch (Exception e) {
 			System.out.println("issue resolved in main method");
@@ -41,7 +43,7 @@ public class Exe_Han_Practice {
 		
 		//exception handling in another method with throws(here the catch method in m2 is appropriate to handle the respective exception and thus console remains at m2 method and executes the remaining lines of code in m2 method and then comes back to main.
 		try {
-			o.m2();
+			Exe_Han_Practice.m2(); //accessing static method through class name
 		}
 		catch (Exception e) {
 			System.out.println("issue resolved in main method");
@@ -49,10 +51,11 @@ public class Exe_Han_Practice {
 		
 		//exception handling in another method with throws(here the catch method in m3 is not appropriate to handle the respective exception and thus console moves back to main method to resolve the un-resolved exception and then does not go back to m2 to execute remaining lines of code in m2,instead it just continues with main method().
 		try {
-			o.m3();
+			Exe_Han_Practice.m3(); //accessing static method through class name
 		}
 		catch (Exception e) {
-			System.out.println("issue resolved in main method");
+			System.out.println("issue resolved in main method --- "+e.getMessage());
+			
 		}
 		System.out.println("main end");
 		
@@ -64,7 +67,7 @@ public class Exe_Han_Practice {
 		int a1=10,b1=0;
 		
 		System.out.println("m1 method start");
-		//un-checked exception(arithmetic exception)
+		//un-checked exception(Arithmetic exception)
 		try {	
 			int c1=a1/b1;
 		}
@@ -74,7 +77,7 @@ public class Exe_Han_Practice {
 		}
 		
 		System.out.println("random print statement of m1 method");
-		//checked exception(file not found exception)
+		//checked exception(FileNotFound exception)
 		try {
 			FileInputStream GFG = new FileInputStream("/Desktop/GFG.txt");
 		} 
@@ -93,7 +96,7 @@ public class Exe_Han_Practice {
 		int a2=10,b2=0;
 		
 		System.out.println("m2 method start");
-		//un-checked exception(arithmetic exception)
+		//un-checked exception(Arithmetic exception)
 		try {	
 			int c2=a2/b2;
 		}
@@ -103,7 +106,7 @@ public class Exe_Han_Practice {
 		}
 		
 		System.out.println("random print statement of m2 method");
-		//checked exception(file not found exception)
+		//checked exception(FileNotFound exception)
 		try {
 			FileInputStream GFG = new FileInputStream("/Desktop/GFG.txt");
 		} 
@@ -120,7 +123,7 @@ public class Exe_Han_Practice {
 		int a2=10,b2=0;
 		
 		System.out.println("m3 method start");
-		//un-checked exception(arithmetic exception)
+		//un-checked exception(Arithmetic exception)
 		try {	
 			int c2=a2/b2;
 		}
@@ -130,7 +133,7 @@ public class Exe_Han_Practice {
 		}
 		
 		System.out.println("random print statement of m3 method");
-		//checked exception(file not found exception)
+		//checked exception(FileNotFound exception)
 		try {
 			FileInputStream GFG = new FileInputStream("/Desktop/GFG.txt");
 		} 

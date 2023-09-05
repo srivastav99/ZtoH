@@ -1,6 +1,7 @@
 package ExceptionHandling;
 
 
+
 public class ExceptionHandling_Unchecked { //In this code we can comment out throw and throws still the code works
 	
 		public static void main(String[] args) {
@@ -25,8 +26,10 @@ public class ExceptionHandling_Unchecked { //In this code we can comment out thr
 
 }
 
+		
+
 class I {
-	void method1() { //here we are not throwing any exception using throws still it automatically goes to last calling method to reslve exception.
+	void method1() throws Exception  {
 		
 		int a=10, b=0,c=0;
 		
@@ -35,8 +38,8 @@ class I {
 		} 
 		catch(IndexOutOfBoundsException e) {
 			
-			
-			
+			throw new Exception(e.getMessage());
+
 		}
 		
 	}

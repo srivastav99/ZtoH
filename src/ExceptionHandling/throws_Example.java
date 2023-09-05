@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-
 public class throws_Example {
 
 	public static void main(String[] args) {
@@ -25,6 +24,8 @@ public class throws_Example {
 		}
 		
 		try {
+			
+
 			o.method2();
 		}
 		catch (IndexOutOfBoundsException e) {

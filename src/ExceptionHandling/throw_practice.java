@@ -9,6 +9,7 @@ public class throw_practice {
 		
 
 	}
+
 	void method1() {
 		
 		cc1 o2 = new cc1();
@@ -22,6 +23,7 @@ public class throw_practice {
 	}
 
 }
+
 class cc1 {
 
 	
@@ -41,7 +43,8 @@ class cc1 {
 		
 		catch(Exception ex)
 		{
-			throw new Exception(ex.getMessage()); //here throw is used to print exception msg(/ by zero). If we comment out this line then / by zero will not be printed
+			throw new Exception(ex.getMessage()); //here throw is used to just send back exception msg.
+
 		}
 	
 		System.out.println("c1.m1() after exception===>"+res);

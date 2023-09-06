@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
-public class ClassFileWriter {
+public class ClassFileWriter { 
 
 	public static void main(String[] args) throws IOException {
 		

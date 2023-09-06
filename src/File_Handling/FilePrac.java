@@ -58,10 +58,10 @@ public class FilePrac {
 		}
 		
 		  
-		Scanner dataReader = new Scanner(f1);
+		Scanner sc = new Scanner(f1);
 		
-		while(dataReader.hasNextLine()) {
-			String data = dataReader.nextLine();
+		while(sc.hasNextLine()) {
+			String data = sc.nextLine();
 			System.out.println(data);
 		}
 		 

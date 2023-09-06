@@ -32,6 +32,7 @@ public class ClassFileWriter {
 		f12.write("this is a test file for file writer\n");
 		f12.append("demo");
 		f12.flush();
+		f12.close();
 
 	}
 

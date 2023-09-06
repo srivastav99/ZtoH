@@ -1,6 +1,7 @@
 package File_Handling;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -37,23 +38,30 @@ public class ClassReadingfile {
 		
 		Scanner sc = new Scanner(f1);
 		
+		sc.hasNextLine();
+		
 		while(sc.hasNextLine()) {
 			String data = sc.nextLine();
 			System.out.println(data);
 		}
-		//or
-		FileReader fr = new FileReader(f1);
 		
+		//or
+		
+		FileReader fr = new FileReader(f1);
 		int i;
 		while((i=fr.read())!=-1){
 			System.out.print((char)i);
 		}
-		/*
-		while() {
-			String data = sc.nextLine();
-			System.out.println(data);
+		fr.close();
+		
+		//or
+		
+		FileInputStream fis = new FileInputStream(f1);
+		int j;
+		while((j=fis.read())!=-1){
+			System.out.print((char)j);
 		}
-	*/
+		
 	}
 
 }

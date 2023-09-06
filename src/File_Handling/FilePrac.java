@@ -65,19 +65,7 @@ public class FilePrac {
 			System.out.println(data);
 		}
 		 
-		/*
-		String string = "feerfgertg";
-		byte[] b= string.getBytes();
-		try {
-			for(int i=0;i<string.length();i++) {
-				fos.write(b[i]);
-				
-				
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		
 		try {
 			fis.read();
@@ -85,7 +73,13 @@ public class FilePrac {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-*/
+		int i;
+		while((i=fis.read())!=-1){
+			System.out.print((char)i);
+		}
+			
+		
+
 	}
 
 }

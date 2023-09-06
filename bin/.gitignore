@@ -1,7 +1,13 @@
-/TestQS/
+/Arrays/
+/Basic/
+/Conditional_ifAndelse/
+/Functions/
+/Inheritance/
 /Interface/
 /Loops/
 /OOPS/
+/ExceptionHandling/
+/File_Hnadling/
 /OOPS_AccessModifier1/
 /OOPS_Static/
 /OPPS_AccessModifier/
@@ -9,6 +15,6 @@
 /Operators/
 /Polymorphism/
 /Selection_Switch/
+/TestQS/
 /Two_D_Array/
-/ExceptionHandling/
-/Inheritance/
+/File_Handling/

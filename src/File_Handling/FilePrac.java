@@ -14,17 +14,14 @@ public class FilePrac {
 		
 		File f = new File("C:\\Users\\pc\\OneDrive\\Desktop\\file\\newfile");
 		
-		
-		
 		f.mkdir();
 		f.delete();
 		f.mkdir();
 		
 		
-		
 		File f1 = new File("C:\\\\Users\\\\pc\\\\OneDrive\\\\Desktop\\\\file\\\\newfile\\tr.txt");
 		
-			f1.createNewFile();
+		f1.createNewFile();
 			
 		FileInputStream fis = null;
 		fis = new FileInputStream("C:\\\\Users\\\\pc\\\\OneDrive\\\\Desktop\\\\file\\\\newfile\\tr.txt");
@@ -65,12 +62,10 @@ public class FilePrac {
 			System.out.println(data);
 		}
 		 
-		
-		
 		try {
 			fis.read();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		int i;

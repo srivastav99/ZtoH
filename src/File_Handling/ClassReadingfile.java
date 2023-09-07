@@ -60,6 +60,32 @@ public class ClassReadingfile {
 			System.out.print((char)j);
 		}
 		
+		//copying contents of one file to another file
+		
+		File f3 = new File("C:\\Users\\pc\\OneDrive\\Desktop\\file\\copyContent");
+		f3.mkdir();
+		
+		File f4 = new File("C:\\\\Users\\\\pc\\\\OneDrive\\\\Desktop\\\\file\\\\copyContent\\filetocopy.txt");
+		//f4.createNewFile();//we dont have to create a file when we are to write in it, it will check for file, if not present it will create a file on its own and write in it.
+		FileWriter f14 = new FileWriter(f4);//here the file filetocopy gets created
+		f14.write("this a the file to be copied");
+		f14.flush();
+		
+		
+		File f5 = new File("C:\\\\Users\\\\pc\\\\OneDrive\\\\Desktop\\\\file\\\\copyContent\\fileres.txt");
+		//f5.createNewFile(); //we dont have to create a file when we are to write in it, it will check for file, if not present it will create a file on its own and write in it.
+		FileWriter f15 = new FileWriter(f5);//here the file gets created
+		
+		Scanner sc1 = new Scanner(f4);
+		while(sc1.hasNextLine()) {
+			String data = sc1.nextLine();
+			f15.write(data);
+			f15.flush();
+			
+		}
+		
+		
+		
 	}
 
 }

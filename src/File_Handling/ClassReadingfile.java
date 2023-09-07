@@ -37,16 +37,14 @@ public class ClassReadingfile {
 		
 		
 		Scanner sc = new Scanner(f1);
-		
-		sc.hasNextLine();
-		
+		//line by line
 		while(sc.hasNextLine()) {
 			String data = sc.nextLine();
 			System.out.println(data);
 		}
 		
 		//or
-		
+		//char by char
 		FileReader fr = new FileReader(f1);
 		int i;
 		while((i=fr.read())!=-1){
@@ -55,7 +53,7 @@ public class ClassReadingfile {
 		fr.close();
 		
 		//or
-		
+		//char by char
 		FileInputStream fis = new FileInputStream(f1);
 		int j;
 		while((j=fis.read())!=-1){
